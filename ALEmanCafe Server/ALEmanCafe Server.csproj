@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1266A794-FAEF-47EA-9F85-48C29AC6EFDD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ALEmanCafe_Server</RootNamespace>
+    <AssemblyName>ALEmanCafe Server</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\ALEmanCafe.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Build.Tasks" />
+    <Reference Include="MySql.Data, Version=6.3.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ALEmanCafe Server2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\AddTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\AddTime.Designer.cs">
+      <DependentUpon>AddTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ALEmanCafe Server.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ALEmanCafe Server.Designer.cs">
+      <DependentUpon>ALEmanCafe Server.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ALEmanCafe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ALEmanCafe.Designer.cs">
+      <DependentUpon>ALEmanCafe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\ChangePC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\ChangePC.Designer.cs">
+      <DependentUpon>ChangePC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\RenamePC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\RenamePC.Designer.cs">
+      <DependentUpon>RenamePC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\AdminControlling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\AdminControlling.Designer.cs">
+      <DependentUpon>AdminControlling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\DatabaseConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\DatabaseConfiguration.Designer.cs">
+      <DependentUpon>DatabaseConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\KeyboardSimulator.cs" />
+    <Compile Include="Other\MyDatabase.cs" />
+    <Compile Include="Cafe\NetworkItems.cs" />
+    <Compile Include="Cafe\OptionsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\OptionsMenu.Designer.cs">
+      <DependentUpon>OptionsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\AddProduct.designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products\ProductsInfos.cs" />
+    <Compile Include="Products\ProductsLog.cs" />
+    <Compile Include="Products\SellingOperate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products\SellingOperate.designer.cs">
+      <DependentUpon>SellingOperate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Cafe\RemoteApplications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\RemoteApplications.Designer.cs">
+      <DependentUpon>RemoteApplications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\RemoteManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\RemoteManagement.Designer.cs">
+      <DependentUpon>RemoteManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\SendMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\SendMessage.Designer.cs">
+      <DependentUpon>SendMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\SystemInofrmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\SystemInofrmation.Designer.cs">
+      <DependentUpon>SystemInofrmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe\TimeLimited.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cafe\TimeLimited.Designer.cs">
+      <DependentUpon>TimeLimited.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cafe\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\AddTime.resx">
+      <DependentUpon>AddTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ALEmanCafe Server.resx">
+      <DependentUpon>ALEmanCafe Server.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ALEmanCafe.resx">
+      <DependentUpon>ALEmanCafe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\ChangePC.resx">
+      <DependentUpon>ChangePC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\OptionsMenu.resx">
+      <DependentUpon>OptionsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\RenamePC.resx">
+      <DependentUpon>RenamePC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\AdminControlling.resx">
+      <DependentUpon>AdminControlling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\DatabaseConfiguration.resx">
+      <DependentUpon>DatabaseConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products\SellingOperate.resx">
+      <DependentUpon>SellingOperate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Cafe\RemoteApplications.resx">
+      <DependentUpon>RemoteApplications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\RemoteManagement.resx">
+      <DependentUpon>RemoteManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\SendMessage.resx">
+      <DependentUpon>SendMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\SystemInofrmation.resx">
+      <DependentUpon>SystemInofrmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe\TimeLimited.resx">
+      <DependentUpon>TimeLimited.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\FalseIcon.png" />
+    <Content Include="Resources\LoginMonitor.png" />
+    <Content Include="Resources\OfflineDisplay.png" />
+    <Content Include="Resources\OnlineDisplay.png" />
+    <Content Include="Resources\PauseDisplay.png" />
+    <Content Include="Resources\TimeMonitor.png" />
+    <Content Include="Resources\TrueIcon.png" />
+    <None Include="bin\Debug\photos\LoginMonitor.png" />
+    <None Include="bin\Debug\photos\OfflineDisplay.png" />
+    <None Include="bin\Debug\photos\OnlineDisplay.png" />
+    <None Include="bin\Debug\photos\TimeMonitor.png" />
+    <None Include="bin\Debug\photos\false.png" />
+    <None Include="bin\Debug\photos\true.png" />
+    <None Include="bin\Debug\photos\TrueIcon.png" />
+    <None Include="bin\Debug\photos\FalseIcon.png" />
+    <Content Include="Resources\ALEmanCafe.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
